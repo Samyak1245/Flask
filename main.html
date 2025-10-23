@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <script type = "text/javascript" src = "{{ url_for('static', filename='script/script.js') }}">
+    </script>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <h2>Check Result</h2>
+
+        <label for="physics">Physics:</label><br>
+        <input type="number" id="physics" name="physics" placeholder="Enter Physics marks" min="0" max="100" required><br>
+
+        <label for="chemistry">Chemistry:</label><br>
+        <input type="number" id="chemistry" name="chemistry" placeholder="Enter Chemistry marks" min="0" max="100" required><br>
+
+        <label for="maths">Maths:</label><br>
+        <input type="number" id="maths" name="maths" placeholder="Enter Maths marks" min="0" max="100" required><br>
+
+        <label for="biology">Biology:</label><br>
+        <input type="number" id="biology" name="biology" placeholder="Enter Biology marks" min="0" max="100" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
